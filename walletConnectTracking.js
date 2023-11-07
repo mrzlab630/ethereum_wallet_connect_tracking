@@ -42,7 +42,7 @@
 
             window.mrZLab630 = {
                 ethWalletConnectTracking: {
-                  action:'eth', //'localStorage' // 'interval'
+                  action: null,//'eth', //'localStorage' // 'interval'
                     wallet:{
                         type:null,
                         value:null
