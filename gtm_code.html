@@ -1,0 +1,22 @@
+<script type="module" src="https://cdn.jsdelivr.net/gh/mrzlab630/ethereum_wallet_connect_tracking@main/walletConnectTracking.min.js"></script>
+<script>    
+    if(window.mrZLab630){
+        window.mrZLab630.ethWalletConnectTracking.eth()
+    }   
+    
+    //track the result
+    var getWallet = window.setInterval(function(){
+
+    var wallet = window.mrZLab630.ethWalletConnectTracking.wallet
+
+  if(wallet.value){   
+  
+  //Now you can take the wallet address and do something with it.
+    console.log('gotcha!', wallet.value)
+
+  if (getWallet !== undefined) {
+        clearInterval(getWallet)
+      }
+  }
+}, 1000)
+  </script>
